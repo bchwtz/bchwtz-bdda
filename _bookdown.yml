@@ -1,0 +1,6 @@
+book_filename: "bchwtz-base"
+language:
+  ui:
+    chapter_name: "Kapitel "
+delete_merged_file: true
+

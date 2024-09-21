@@ -1,0 +1,19 @@
+# Korrekturkürzel
+
+Kürzel     Bedeutung       
+--------   --------------   
+W          Wiederholung
+WW         Wortwiederholung
+UV         Unvollständig
+UG         Ungenau
+A          Ausdruck
+SB         Satzbau
+Gr         Grammatikfehler
+R          Rechtschreibfehler
+Q          Quelle fehlt
+F          Falsch
+NN         Nicht Notwendig
+Z          Zitation falsch
+G/K        Groß- / Kleinschreibung
+S/P        Singular / Plural
+---------  -------------- 

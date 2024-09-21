@@ -1,0 +1,54 @@
+# Assignments
+
+Abgabeaufgaben sind wissenschaftliche Dokumente, deren Einreichung in einer spezifischen Form erfolgen muss. Jede dieser Formen verfolgt einen gesonderten Zweck und bringt entsprechende Formatvorgaben mit sich. Ziel der nachfolgenden Formatbeschreibungen ist die Unterstützung der Sicherung [guter wissenschaftlicher Praxis](https://www.dfg.de/foerderung/grundlagen_rahmenbedingungen/gwp/). Die Deutsche Forschungsgemeinschaft (DFG) definiert als [allgemeine Prinzipien](https://www.dfg.de/download/pdf/foerderung/rechtliche_rahmenbedingungen/gute_wissenschaftliche_praxis/empfehlung_wiss_praxis_1310.pdf) wissenschaftlicher Arbeiten, insbesondere:
+
+- lege artis zu arbeiten,
+- Resultate zu dokumentieren,
+- alle Ergebnisse konsequent selbst anzuzweifeln,
+- strikte Ehrlichkeit im Hinblick auf die Beiträge von Partnern, Konkurrenten und
+Vorgängern zu wahren.
+
+Diese allgemeinen Prinzipien wissenschaftlicher Arbeit sind formatübergreifend und jeder Zeit zu beachten. Die nachfolgende Auflistung geht spezifischer auf die Besonderheiten der möglichen Abgabeformate ein.
+
+## Paper
+
+Paper sind wissenschaftliche Dokumente, die üblicherweise den Prozess zur Erzielung eines Erkenntnisgewinns transparent und in der Form darstellen, dass die erzielten Resultate für den fachlichen Leser nachvollziehbar sind. 
+
+- **FHSWF Markdown Template:** Das FHSWF R Package enthält die Formatvorlage `fhswf::seminarpaper`, die für die Erstellung von Hausarbeiten, Projektarbeiten oder Abschlussarbeiten verwendet werden kann. Text kann in diesem Template im Markdown Format integriert und formatiert werden, alle Erweiterungen des [R Markdown](https://rmarkdown.rstudio.com/) Dialektes werden unterstützt. Diese Vorlage ist zudem voll \LaTeX kompatibel. Im Unterschied zu reinem \LaTeX erlaubt dieses Template die Integration von beliebigem Programmcode (R, Python, C, ...) der beim Erstellen des PDFs ausgeführt werden kann. Programmcode wird automatisch ausgeführt und deren Ergebnisse (Konsolenoutput, Tabellen, Grafiken) können im erstellten Dokument automatisch integriert werden, sodass diese nicht separat verwaltet werden müssen.
+- **LaTeX:** Die Verwendung von reinem \LaTeX für die Erstellung von Abgaben ist ebenfalls zulässig, sofern sie die unangepasste `article` Klasse oder die Vorlage eines wissenschaftlichen Journals oder einer Konferenz (z.B. `elsarticle`) nutzen. Andere oder angepasste Varianten (auch Hochschulvorlagen) der vorgenannten Dokumentenklasse sind nicht zulässig. Der verwendete Dokumenteneditor kann frei gewählt werden und sowohl lokal auf ihrem Computer installiert werden als auch ein Webeditor (z.B. [OverLeaf](https://www.overleaf.com/)) sein.
+
+Die Verwendung von *Microsoft Word* oder ähnlichen Textverarbeitungsprogrammen ist **nicht** ohne weiteres zulässig, Bedarf der Rücksprache mit dem Prüfer und wird nur genehmigt, wenn die verwendete und vorzuschlagende Vorlage Bedingung für die Einreichung bei einem wissenschaftlichem Outlet (z.B. International Conference on Information Systens) ist.
+
+Die Bewertungsgrundlage für die Abgabe ist **ein** erzeugtes PDF Dokument, dass alle Elemente der Arbeit enthält. Alle Quelldateien (z.B. `*.tex`, `*.rmd`, `*.bib`) zur Erstellung dieses PDF Dokumentes müssen zwingend mit eingereicht werden. Die Abgabe kann durch einen strukturierten und dokumentierten digitalen Anhang (z.B. längerer Code) ergänzt werden. Für einen digitalen Anhang ist im PDF Dokument ein Verzeichnis mit Kurzbeschreibung der im digitalen Anhang enthaltenen Elemente einzufügen. Das zu bewertende PDF Dokument muss eine **unterschriebene ehrenwörtliche Erklärung** enthalten. Abgaben ohne ehrenwörtliche Erklärung werden nicht bewertet.
+
+## Präsentation
+
+Akademische Präsentationen können in wissensvermittelnden Präsentationenen und Präsentationenen zur Ergebnisvorstellung unterschieden werden. 
+
+- **MECE:** Der Aufbau der einzlenen Botschaften muss dem MECE-Prinzip folgen (mutually exclusive and collectively exhaustive).
+
+- **Pyramid Principle:** Der Aufbau einzelner Kommunikationsschritte muss dem pyramiden Prinzip (Barbara Minto) folgen, sodass die wichtigste Nachricht zuerst kommuniziert wird ("early punchline"). 
+
+Unabhängig vom genauen Typ der Präsentation ist ein angemessenes Format zu wählen, dass allen wissenschaftlichen Belangen (z.B. Angabe von Quellen) ermöglicht. Bitte nutzen Sie für die Erstellung der Präsentation die folgenden Vorlagen.
+
+- [Powerpoint Vorlage](./data/bchwtz-slidemaster.pptx)
+- *R-Markdown*: Die Markdown Vorlage befindet sich im `fhswf` R-Package als `fhswf::presentation`.
+
+## Poster
+
+Für akademische Poster gelten die gleichen Grundsätze, wie für Seminar- und Abschlusarbeiten. Die folgende Präsentationsvorlage ist zu nutzen. Das Druckformat des Posters beträgt A2 (59.4cm x 84,1cm; Aufteilbar in 4x A3 Ausdrucke):
+
+- [Beispiel Poster](./data/bchwtz-postermaster.pdf)
+- [Powerpoint Vorlage](./data/bchwtz-postermaster.pptx)
+
+## Dataset
+
+Datensatz für die Aufgabe. Datensatz muss dem Dozenten vollständig zugänglich gemacht werden.
+
+## Implementierung
+
+Nachvollziehbar und dokumentiert.
+
+## Frei
+
+Keine Restriktionen. Wählen Sie ein für die Darstellung und Abgabe der Ergebnisse geeignetes Format.

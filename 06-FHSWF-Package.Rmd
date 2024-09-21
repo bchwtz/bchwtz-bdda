@@ -1,0 +1,9 @@
+# FHSWF R Package
+
+## INFO 
+
+Extended Information will be added shortly. Plese refer to the german version which is currently located here:
+
+https://bchwtz.github.io/bchwtz-stat/fhswf-package.html
+
+
