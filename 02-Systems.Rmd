@@ -19,7 +19,7 @@ The following online learnings can be used to get used to the pySpark bindings f
 
 #### Tutorial
 
-The following tutorial requires a Spark Instance to run the commands. The easiest way to emulate a cluster is with the following docker image. 
+The following tutorial requires a Spark instance to run the commands. The easiest way to emulate a cluster is with the following docker image. 
 
 ```{bash, eval=F}
 docker run -p 10000:8888 quay.io/jupyter/all-spark
