@@ -2,7 +2,7 @@
 
 Abgabeaufgaben sind wissenschaftliche Dokumente, deren Einreichung in einer spezifischen Form erfolgen muss. Jede dieser Formen verfolgt einen gesonderten Zweck und bringt entsprechende Formatvorgaben mit sich. Ziel der nachfolgenden Formatbeschreibungen ist die Unterstützung der Sicherung [guter wissenschaftlicher Praxis](https://www.dfg.de/foerderung/grundlagen_rahmenbedingungen/gwp/). Die Deutsche Forschungsgemeinschaft (DFG) definiert als [allgemeine Prinzipien](https://www.dfg.de/download/pdf/foerderung/rechtliche_rahmenbedingungen/gute_wissenschaftliche_praxis/empfehlung_wiss_praxis_1310.pdf) wissenschaftlicher Arbeiten, insbesondere:
 
-- lege artis zu arbeiten,
+- lege artis zu arbeiten, 
 - Resultate zu dokumentieren,
 - alle Ergebnisse konsequent selbst anzuzweifeln,
 - strikte Ehrlichkeit im Hinblick auf die Beiträge von Partnern, Konkurrenten und
