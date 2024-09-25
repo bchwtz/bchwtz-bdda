@@ -4,7 +4,7 @@ bookdown::gitbook:
     toc:
       collapse: section
       before: |
-        <li><a href="./"><b>Base</b></a></li>
+        <li><a href="./"><b>BDSM</b></a></li>
       after: |
         <li><a href="http://www.bchwtz.de" target="blank"><center>www.<b>BCHWTZ</b>.de</center></a></li>
     edit: https://github.com/rstudio/bookdown-demo/edit/master/%s
