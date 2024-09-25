@@ -12,7 +12,7 @@ github-repo: bchwtz/bchwtz-bdda
 description: "Notes"
 ---
 
-# Einführung {-}
+# Introduction {-}
 
 ```{r include=FALSE}
 # automatically create a bib database for R packages
@@ -36,6 +36,8 @@ knitr::opts_chunk$set(echo = TRUE, fig.align = "center")
 knitr::knit_hooks$set(inline=inline_hook)
 ```
 
-Herzlich Willkommen
 
- Prof. Buchwitz
+Prof. Dr. Buchwitz
+
+
+
