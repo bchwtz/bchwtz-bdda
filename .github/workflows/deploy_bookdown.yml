@@ -18,6 +18,7 @@ jobs:
         uses: actions/checkout@main
       - name: Ensure latest FHSWF Package Version
         run: Rscript -e 'remotes::install_github("bchwtz/fhswf", upgrade = "never")'
+        env: GITHUB_PAT: ${{ secrets.GH_PAT }}
       - name: Render Slides
         run: cd slides; make clean pdf gif clean-cache; cd ..
       - name: Render Book
@@ -31,6 +32,6 @@ jobs:
         env:
            EMAIL: ${{ secrets.EMAIL }}               # must be a verified email
            GH_TOKEN: ${{ secrets.GH_PAT }} # https://github.com/settings/tokens
-           GITHUB_PAT: ${{ secrets.GH_PAT }}
+           
            BUILD_DIR: _book/                     # "_site/" by default
  
