@@ -1,8 +1,8 @@
-grundlagen
-portfolioprüfungen
-bewertungsbogen
-modulbeschreibungen
-rprg
-bachelor
-master
-zusatz
+big-data
+systems
+spark
+spark-with-python
+preparation
+tutorial
+spark-with-r
+systems-1
