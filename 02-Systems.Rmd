@@ -2,28 +2,36 @@
 
 ## Spark
 
+### Spark with Python
+
+#### Preparation
+
+The following online learnings can be used to get used to the pySpark bindings for Apache Spark. After obtaining [access](https://bchwtz.github.io/bchwtz-base/data-skills.html) to the mentioned platform you have to join those courses manually.
+
+| No.  | Platform   | Name     |
+| ---: | :--------- | :------- |
+| 1    | Datacamp   | Introduction to PySpark |
+| 2    | Datacamp   | Big Data Fundamentals with PySpark |
+| 3    | Datacamp   | Cleaning Data with PySpark |
+| 4    | Datacamp   | Feature Engineering with PySpark |
+| 5    | Datacamp   | Machine Learning with PySpark |
+
+
+#### Tutorial
+
+The following tutorial requires a Spark Instance to run the commands. The easiest way to emulate a cluster is with the following docker image. 
+
 ```{bash, eval=F}
 docker run -p 10000:8888 quay.io/jupyter/all-spark
 ```
 
-### Spark with Python
-
-
-#### Preparation
-
-| No.  | Name     |
-| ---: | :--------|
-| 1    | Datacamp:  |
-
-
-
-#### Tutorial
 
 | No.  | Topic             | Download     |
 | ---: | :--------         | :---:        |
 | 1    | PySpark Tutorial Code-Along | [IPNB](slides/sparktutorial/bchwtz-sparktutorial-python-codealong.ipynb) |
 | 2    | PySpark Tutorial Full       | [IPNB](slides/sparktutorial/bchwtz-sparktutorial-python-full.ipynb) |
 
+
 ### Spark with R
 
-
+tbd
