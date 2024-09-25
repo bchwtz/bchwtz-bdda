@@ -1,4 +1,4 @@
-# Big Data 
+# Big Data: Systems and Methods
 
 ```{r, echo = F, out.width="80%", fig.cap="[Download Slides](slides/CH01-BDSM-Reliability,Scalability,Maintainability.pdf)"}
 knitr::include_graphics("slides/gifs/CH01-BDSM-Reliability,Scalability,Maintainability.gif")
@@ -9,5 +9,3 @@ knitr::include_graphics("slides/gifs/CH01-BDSM-Reliability,Scalability,Maintaina
 | ---: | :--------         | :---:     |
 | 1    | Foundations of Data Systems   | [PDF](slides/CH01-BDSM-Reliability,Scalability,Maintainability.pdf)     |
 
-
-## Foundation of 
