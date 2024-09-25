@@ -1,6 +1,6 @@
 # Data Skills
 
-Zur Unterstützung der Selbstlernphasen im Studium und zum selbstständigen Aneignen von Kompetenzen zur Datenverarbeitung, u.a. in R oder Python stehen die folgenden zusätzlichen Angebote bereit.  
+Zur Unterstützung der Selbstlernphasen im Studium und zum selbstständigen Aneignen von Kompetenzen zur Datenverarbeitung, u.a. in R oder Python stehen die folgenden zusätzlichen Angebote bereit.   
 
 ## Datacamp 
 
