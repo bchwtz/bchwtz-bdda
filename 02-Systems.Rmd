@@ -28,8 +28,8 @@ docker run -p 10000:8888 quay.io/jupyter/all-spark
 
 | No.  | Topic             | Download     |
 | ---: | :--------         | :---:        |
-| 1    | PySpark Tutorial Code-Along | [IPNB](slides/sparktutorial/bchwtz-sparktutorial-python-codealong.ipynb) |
-| 2    | PySpark Tutorial Full       | [IPNB](slides/sparktutorial/bchwtz-sparktutorial-python-full.ipynb) |
+| 1    | PySpark Tutorial Code-Along | [IPYNB](data/sparktutorial/bchwtz-sparktutorial-python-codealong.ipynb) |
+| 2    | PySpark Tutorial Full       | [IPYNB](data/sparktutorial/bchwtz-sparktutorial-python-full.ipynb) |
 
 
 ### Spark with R
