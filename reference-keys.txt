@@ -6,15 +6,3 @@ rprg
 bachelor
 master
 zusatz
-korrekturkürzel
-assignments
-paper
-präsentation
-poster
-dataset
-implementierung
-frei
-data-skills
-datacamp
-fhswf-r-package
-info
