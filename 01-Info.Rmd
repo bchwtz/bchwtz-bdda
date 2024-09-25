@@ -1,3 +1,13 @@
 # Big Data 
- 
-A
+
+```{r, echo = F, out.width="80%", fig.cap="[Download Slides](slides/CH01-BDSM-Reliability,Scalability,Maintainability.pdf)"}
+knitr::include_graphics("slides/gifs/CH01-BDSM-Reliability,Scalability,Maintainability.gif")
+```
+
+
+| No.  | Topic              | Slides    |
+| ---: | :--------         | :---:     |
+| 1    | Foundations of Data Systems   | [PDF](slides/CH01-BDSM-Reliability,Scalability,Maintainability.pdf)     |
+
+
+## Foundation of 
