@@ -5,4 +5,6 @@ spark-with-python
 preparation
 tutorial
 spark-with-r
-systems-1
+methods
+regression
+tbd
