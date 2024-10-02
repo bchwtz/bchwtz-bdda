@@ -29,7 +29,7 @@ Apache Spark stellt per MLlib unter anderem Routinen zur Schätzung von linearen
 - https://spark.apache.org/docs/latest/ml-advanced.html#optimization-of-linear-methods-developer
 - https://spark.apache.org/docs/latest/api/scala/org/apache/spark/mllib/regression/index.html
 
-# Distributed Ordinary Least Squares Estimation (OLS)
+# Ordinary Least Squares Estimation (OLS)
 
 Wachsende Datenmengen führen dazu, dass sich Regressionsmodelle nicht auf Single-Node Systemen lokal schätzen lassen, sondern auf Systemen mit mehreren Nodes verteilt werden müssen. Das multiple Regressionsproblem 
 
@@ -37,6 +37,7 @@ $$
 y = X\beta + \epsilon
 $$
 
+mit den Bestandteilen
 
 $$
 y = \begin{pmatrix} y_1 \\ y_2 \\ \vdots \\ y_n \end{pmatrix} \quad
@@ -49,8 +50,7 @@ X = \begin{pmatrix} x_{10} & x_{11} & \ldots & x_{1p} \\
 \epsilon = \begin{pmatrix} \epsilon_1 \\ \epsilon_2 \\ \vdots \\ \epsilon_n \end{pmatrix} \quad
 $$
 
-
-Die dafür notwendigen elementaren Operationen stellt Apache Spark weitgehend zur Verfügung. Aus Gründen numerischer Stabilität und ggf. algorithmischer Präzision werden Regressionsschätzer nicht direkt über die in einführenden Lehrbüchern hergeleitete analytische Lösung $\hat{\beta} = (X^TX)^{-1}X^Ty$ berechnet, sondern über Dekompositionsverfahren. Die verwendeten Verfahren sind insbesondere die LU Dekomposition, die QR Dekomposition und die Berechnung der OLS-Schätzer über die Moore-Penrose-Pseudoinverse und damit mittelbar über die Singularwertzerlegung (SVD).
+zeigt deutlich, dass die Komplexität des Problems in den Dimensionsn $n$ (Anzahl der Beobachtungen) und $p$ (Anzahl der Regressoren) wachsen kann. Elementaren Operationen zur Handhabung großer Datenmengen und zur Anwendung mathematischer Operatoren stellt Apache Spark zur Verfügung. Aus Gründen numerischer Stabilität und ggf. algorithmischer Präzision werden Regressionsschätzer in der implementierungstechnischen Praxis jedoch nicht direkt über die in einführenden Lehrbüchern hergeleitete analytische Lösung $\hat{\beta} = (X^TX)^{-1}X^Ty$ berechnet, sondern über Dekompositionsverfahren. Die verwendeten Verfahren sind insbesondere die LU Dekomposition, die QR Dekomposition und die Berechnung der OLS-Schätzer über die Moore-Penrose-Pseudoinverse und damit mittelbar über die Singularwertzerlegung (SVD).
 
 Eine Einführung in das Thema liefern Hansen et al. und Higham. Zur Effizienz der Algorithmen führen Golub und Van Loan Argumente an. Druinsky und Toledo äußern sich zur Präzision bei der Lösung von Gleichungssystemen mittels Matrizeninversion.
 
@@ -59,9 +59,11 @@ Eine Einführung in das Thema liefern Hansen et al. und Higham. Zur Effizienz de
 - Golub, Gene H.; Van Loan, Charles F. (2013): Matrix Computations, Fourth Edition, Johns Hopkins University Press.
 - Druinsky, Alex; Toledo, Sivan (2012): How Accurate is inv(A)*b?, arXiv Preprint, https://arxiv.org/abs/1201.6035. 
 
-Kern der praktischen Anwendung ist die grundlegende Implementierung der konkurrierenden Verfahren zur OLS Schätzung und die Beurteilung der Performance der Verfahrensanwendung und Präzision der Ergebnisse. Dabei sind u.a. die folgenden Schritte zu berücksichtigen:
+# Implementierungsaufgabe: Distributed OLS
 
-- Implementierung der zugewiesenen OLS-Verfahrensvariante/n unter Nutzung der in Apache Spark zur Verfügung stehenden **verteilten** Rechenoperationen. Die Dimension der Datenmatrix $X$ ist $n \times k$, wobei $n$ die Anzahl der Beobachtungen und $k$ die Anzahl der Variablen ist. Die implementierte Verfahrensvariante muss sehr große Dimensionen von $X$ für die Berechnung der OLS-Schätzer unterstützen, d.h. $n \gg  10^9$ und $k \gg 10^5$. 
+Kern der praktischen Anwendung ist die grundlegende Implementierung der konkurierenden Verfahren zur OLS Schätzung und die Beurteilung der Performance der Verfahrensanwendung und Präzision der Ergebnisse. Dabei sind u.a. die folgenden Schritte zu berücksichtigen:
+
+- Implementierung der zugewiesenen OLS-Verfahrensvariante(n) unter Nutzung der in Apache Spark zur Verfügung stehenden **verteilten** Rechenoperationen. Die Dimension der Datenmatrix $X$ ist $n \times k$, wobei $n$ die Anzahl der Beobachtungen und $k$ die Anzahl der Variablen ist. Die implementierte Verfahrensvariante muss sehr große Dimensionen von $X$ für die Berechnung der OLS-Schätzer unterstützen, d.h. $n \gg  10^9$ und $k \gg 10^5$. 
 - Simulation eines großen Beispieldatensatzes für ein Regressionsproblem mit bekannten Parametern $\hat{\beta}$ für die Darstellung und den Vergleich der Performance der Implementierung der Verfahrensvarianten. Die simulierten $k$ Variablen sollen dabei eine moderat ausgeprägte Kovarianzstruktur haben und sich hinsichtlich ihrer Varianz unterscheiden. Eine eklatante Verletzung der Gauss-Markov-Annahmen soll nicht vorliegen.
 - Anschließend Durchführen des Vergleichs und Darstellung der Rechenzeit auf einem Cluster in Abhängigkeit der Mächtigkeit von $n$ und $k$. Der Apache Spark Cluster kann dabei auf einem System simuliert und mit Docker (z.B. Docker Desktop bzw. Docker Swarm) oder einer anderen Containerlösung betrieben werden. Die Ergebnisse des Vergleiches werden auch grafisch dargestellt.
 

@@ -4,6 +4,7 @@
 **.RData
 .RData
 .Ruserdata
+.DS_Store
 **.DS_Store
 nongit*
 nongit/*
