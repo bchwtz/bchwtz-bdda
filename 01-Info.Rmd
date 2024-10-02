@@ -9,3 +9,6 @@ knitr::include_graphics("slides/gifs/CH01-BDSM-Reliability,Scalability,Maintaina
 | ---: | :--------         | :---:     |
 | 1    | Foundations of Data Systems   | [PDF](slides/CH01-BDSM-Reliability,Scalability,Maintainability.pdf)     |
 
+
+
+[PDF](exercises/IMP.pdf)
